@@ -17,8 +17,11 @@ function generateQuestion(){
   $wrong1 = generateIncorrectAnswer($answer);
   $wrong2 = generateIncorrectAnswer($answer);
 
-  //ensure that the 2 wrong answers are unique
-  while($wrong1===$wrong2){
+  //ensure the 2 wrong answers aren't the same as the correct
+  while ($answer==$wrong1){
+    $wrong1 = generateIncorrectAnswer($answer);
+  }
+  while ($answer==$wrong2 || $wrong2==$wrong1){
     $wrong2 = generateIncorrectAnswer($answer);
   }
 
@@ -35,12 +38,7 @@ function generateQuestion(){
 
 //function to make the incorrect answer within 10 either way of the answer
 function generateIncorrectAnswer($answer){
-  $addorminus = rand(0,1);
-  if ($addorminus===0){
-    return $answer-rand(1,10);
-  } else {
-    return $answer+rand(1,10);
-  }
+  return $answer+rand(-10,10);
 }
 
 // Loop for required number of questions
