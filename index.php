@@ -14,9 +14,15 @@
           <div class="toast">Let's start the quiz!</div>
             <p class="breadcrumbs">Question <?php echo showQuestionNumber(); ?> of 10</p>
             <p class="quiz">What is <?php echo showQuestion($count); ?>?</p>
-            <form action="<?php $_PHP_SELF ?>" method="post">
+            <form action="" method="post">
                 <input type="hidden" name="id" value="0" />
                 <?php showButtons($count); ?>
+                <?php
+                   if (isset($_POST["answer"]))
+                   {
+                       $count++;
+                   }
+                ?>
             </form>
 
         </div>
