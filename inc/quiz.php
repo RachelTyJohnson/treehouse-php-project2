@@ -67,7 +67,7 @@ function getFinalMessage($score){
   } else if ($score >=5){
     return "Just passed! Keep practicing to get better!";
   } else {
-    return "Good effort, but you can do better! Keep practicing to get better!";
+    return "Good effort, but you can do better!";
   }
 }
 

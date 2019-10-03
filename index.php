@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Math Quiz: Addition</title>
+  <title>Math Quiz: Intermediate Addition</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
