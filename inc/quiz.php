@@ -15,36 +15,14 @@
  *
  */
 
-session_start();
-
 // Include questions
-include('inc/generate_questions.php');
 
 // Keep track of which questions have been asked
-$count=1;
 
 // Show which question they are on
-function showQuestionNumber(){
-  global $count;
-  return $count;
-}
-
 // Show random question
-function showQuestion($count){
-  global $questions;
-  echo $questions[$count]['a'] . '+' . $questions[$count]['b'];
-}
+// Shuffle answer buttons
 
-// Shuffle and display answer buttons
-function showButtons($count){
-  global $questions;
-  $answers =[ $questions[$count]['answer'],$questions[$count]['wrong1'],$questions[$count]['wrong2'] ];
-  shuffle($answers);
-  echo
-  "<input type='submit' class='btn' name='answer' value='$answers[0]' />
-  <input type='submit' class='btn' name='answer' value='$answers[1]' />
-  <input type='submit' class='btn' name='answer' value='$answers[2]' />";
-}
 
 // Toast correct and incorrect answers
 // Keep track of answers

@@ -1,7 +1,7 @@
 /* Random Quote Generator Styles */
 
 body {
-  font-family: 'Signika', serif;
+  font-family: 'Playfair Display', serif;
 }
 
 #quiz-box {
@@ -11,19 +11,6 @@ body {
   right: 10%;
   width: 80%;
   line-height: .5;
-  text-align:center;
-}
-
-
-.toast{
-  background-color:#555;
-  color:white;
-  font-weight:bold;
-  line-height:1;
-  max-width:60%;
-  margin: 0 auto 30px;
-  border-radius: 4px;
-  padding:20px;
 }
 
 .quiz {
@@ -32,7 +19,6 @@ body {
   line-height: 1.1;
   position: relative;
   margin: 0;
-  margin:10px;
 }
 
 .source {
